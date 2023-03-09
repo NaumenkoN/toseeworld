@@ -1,0 +1,156 @@
+:root {
+    --white-color: rgb(255, 255, 255);
+    --modal-text: rgb(228, 228, 228);
+    --link-color: rgb(19, 181, 245);
+    --link-hover: rgb(155, 222, 248);
+    --link-active: rgb(87, 137, 156);
+}
+
+.grid-countries {
+    display: grid;
+    grid-template-columns: 60rem 60rem;
+    gap: 5rem 10rem;
+    margin: 10rem 3rem;
+
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+body {
+    background-attachment: fixed;
+    background-position-y: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: flex;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.grid-country {
+    width: 60rem;
+    height: 25rem;
+}
+
+main ul img {
+    width: 30rem;
+    height: 25rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    object-fit: cover;
+}
+
+.list-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.list-content a {
+    align-self: flex-end;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--link-color);
+    transition: all 0.4s;
+    padding-right: 3rem;
+}
+
+.list-content a:hover {
+    text-decoration: underline;
+    color: var(--link-hover);
+}
+
+.list-content a:active {
+    color: var(--link-active);
+}
+
+.list-content h2 {
+    font-size: 2rem;
+}
+
+.list-content p {
+    font-size: 1.5rem;
+}
+
+.display-none {
+    display: none;
+}
+
+/* ////////////////// @MEDIA //////////////// */
+
+@media (max-width: 660px) {
+    body {
+        background: rgb(6, 129, 127);
+        background: linear-gradient(0deg, rgba(6, 129, 127, 1) 82%, rgba(255, 255, 255, 1) 91%, rgba(213, 151, 117, 1) 98%);
+    }
+
+    .grid-countries {
+        grid-template-columns: 50rem;
+        gap: 5rem;
+        margin: 10rem 0;
+    }
+
+    main ul img {
+        width: 17rem;
+        height: 15rem;
+    }
+
+    .list-content {
+        /* background-color: white; */
+        overflow: scroll;
+
+        justify-content: flex-start;
+        padding: 1rem;
+    }
+
+    ul li {
+        margin: 0 1rem 0 1rem;
+        width: 95%;
+    }
+
+    .list-content h2 {
+        margin-bottom: 1rem;
+    }
+
+    .grid-country {
+        width: 37rem;
+        height: 15rem;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 950px) {
+    body {
+        background: rgb(6, 129, 127);
+        background: linear-gradient(0deg, rgba(6, 129, 127, 1) 82%, rgba(255, 255, 255, 1) 91%, rgba(213, 151, 117, 1) 98%);
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+
+    .grid-countries {
+        grid-template-columns: 50rem;
+        gap: 3rem;
+        margin: 10rem 0;
+    }
+
+    .grid-country {
+        width: 80rem;
+        height: 30rem;
+    }
+
+    main ul img {
+        width: 40rem;
+        height: 30rem;
+    }
+
+    ul li {
+        margin: 0 3rem 0 4rem;
+        width: 95%;
+    }
+}

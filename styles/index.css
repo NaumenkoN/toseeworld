@@ -1,0 +1,245 @@
+/* //////////////SECTION MODAL-WINDOW////////////////// */
+
+:root {
+    --white-color: rgb(255, 255, 255);
+    --modal-text: rgb(228, 228, 228);
+    --link-color: rgb(19, 181, 245);
+    --link-hover: rgb(155, 222, 248);
+    --link-active: rgb(87, 137, 156);
+}
+
+.modal-window {
+    display: flex;
+    justify-content: space-around;
+    height: 65vh;
+    width: 57vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1.3rem;
+    margin: 7rem auto 11rem;
+    box-shadow: 0 0 10px white;
+}
+
+.modal-window img {
+    margin: auto 2rem;
+    height: 25rem;
+    border-radius: 50%;
+    background: rgb(255, 180, 122);
+    background: linear-gradient(180deg, rgba(255, 180, 122, 1) 34%, rgba(37, 212, 226, 0.9724264705882353) 85%);
+}
+
+.modal-window--content {
+    margin: 7.5rem 2rem 0;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-window--content h1 {
+    color: var(--modal-text);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.modal-window--content p {
+    color: var(--modal-text);
+    margin: 1rem 2.5rem 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+    text-overflow: scroll;
+}
+
+.top-places--link {
+    display: block;
+    margin: 1rem 0;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--link-color);
+    transition: all 0.4s;
+    text-align: end;
+    justify-self: end;
+}
+
+.top-places--link:hover {
+    text-decoration: underline;
+    color: var(--link-hover);
+}
+
+.top-places--link:active {
+    color: var(--link-active);
+}
+
+/* //////////////SECTION TOP-PLACES////////////////// */
+
+.top-places {
+    display: grid;
+    grid-template-rows: 30rem;
+    grid-template-columns: repeat(3, 40rem);
+
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.list-items {
+    background-color: aliceblue;
+    margin-top: 10rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px black;
+    width: 40rem;
+    height: 30rem;
+}
+
+.list-items img {
+    object-fit: cover;
+    height: 100%;
+    width: 40rem;
+    border-radius: 1rem;
+}
+
+.top-places--header {
+    font-family: 'Unbounded', cursive;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+
+.description {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.description span {
+    color: rgb(224, 131, 9);
+    text-shadow: 0 0 1px black;
+    margin-left: 2rem;
+}
+
+.all-places--link {
+    display: inline-block;
+}
+/* ////////////////////MEDIA///////////////////////// */
+
+@media (max-width: 660px) {
+    body {
+        background-attachment: fixed;
+        background-position-y: 0;
+    }
+
+    .modal-window {
+        height: 30rem;
+        width: 35rem;
+        margin: 5rem auto;
+        margin-bottom: 3rem;
+    }
+
+    .modal-window img {
+        height: 15rem;
+        margin-top: 5rem;
+    }
+
+    .modal-window--content {
+        margin-top: 3rem;
+        margin-left: 0;
+        margin-right: 0.5rem;
+        margin-bottom: 3rem;
+        /* word-break: break-all; */
+        overflow-y: auto;
+        /* text-overflow: ellipsis; многоточие для вылезающего текста*/
+    }
+
+    .modal-window--content h1 {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    .modal-window--content p {
+        margin: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .top-places--link {
+        display: none;
+    }
+
+    .top-places {
+        grid-template-rows: repeat(3, 10rem);
+        grid-template-columns: 15rem;
+        gap: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+
+        margin-left: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .list-items {
+        width: 15rem;
+        height: 10rem;
+        display: flex;
+
+        background: none;
+        box-shadow: none;
+        margin-top: 1rem;
+    }
+
+    .list-items h2 {
+        font-size: 2rem;
+        margin: 1rem 2rem;
+        white-space: nowrap;
+    }
+
+    .list-items img {
+        height: 10rem;
+        width: 15rem;
+        box-shadow: 0 0 5px black;
+    }
+
+    .description {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .description p,
+    .description span {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    .top-places--header {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .modal-window {
+        width: 85vw;
+        height: 100vh;
+    }
+
+    body {
+        background-attachment: fixed;
+        background-position-y: 0;
+    }
+
+    .list-items img {
+        width: 20rem;
+        height: 15rem;
+    }
+
+    .list-items {
+        width: 20rem;
+        height: 15rem;
+    }
+    .top-places {
+        display: grid;
+        grid-template-rows: 23rem;
+        grid-template-columns: repeat(3, 17rem);
+        gap: 1rem;
+    }
+}
