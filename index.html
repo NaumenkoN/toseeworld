@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Serif+Pro&family=Unbounded:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/png" href="/images/logo.png" />
+        <link rel="stylesheet" href="/styles/shared.css" />
+        <link rel="stylesheet" href="/styles/index.css" />
+        <script defer src="/scripts/lang.js"></script>
+
+        <title>Travel Passion</title>
+    </head>
+    <body onLoad="onLoadChanger()">
+        <header>
+            <nav class="top-nav">
+                <div class="top-nav--logo">
+                    <a href="#">Travel<br class="br" />Passion</a>
+                </div>
+
+                <div class="top-nav--links">
+                    <a class="toplink-1" href="/pages/main_countries.html">Visited Places</a>
+                    <a class="toplink-2" href="/pages/about.html">About me</a>
+                    <select class="select-lang" onChange="upDate()">
+                        <option selected value="English">en</option>
+                        <option value="Ukraine">ua</option>
+                        <option value="Russian">ru</option>
+                        <option value="france">fr</option>
+                    </select>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="modal-window">
+                <img src="/images/IMG_6573-transformed-transformed.png" alt="me" />
+                <div class="modal-window--content">
+                    <h1 class="index-greetings--header">Hey there!</h1>
+                    <p class="index-greetings--content1">
+                        My name is Nikolay and this is my personal website, where I shering photos, videos and other information about places I
+                        visited in different countries around the world.
+                    </p>
+                    <p class="index-greetings--content2"></p>
+
+                    <a href="/pages/main_countries.html" class="top-places--link all-place--link_content">Look all places</a>
+
+                    <a href="#top-places" class="top-places--link top-place--link_content">Look on my top places</a>
+                </div>
+            </section>
+
+            <section id="top-places">
+                <h1 class="top-places--header">TOP PLACES</h1>
+                <ul class="top-places">
+                    <li class="list-items">
+                        <a href="/pages/countries/egypt.html"><img src="/images/TOP_PHOTOS/TOP_PHOTO_EGYPT.JPG" alt="" placeholder="aaa" /></a>
+                        <h2 class="description">
+                            <p>PYPAMYDS</p>
+                            <br /><span>EGYPT</span>
+                        </h2>
+                    </li>
+                    <li class="list-items">
+                        <a href="/pages/countries/cambodia.html"><img src="/images/TOP_PHOTOS/TOP_PHOTO_ANGKOR.JPG" alt="" placeholder="bbb" /></a>
+                        <h2 class="description">
+                            <p>ANGKOR WAT</p>
+                            <br /><span>CAMBODIA</span>
+                        </h2>
+                    </li>
+                    <li class="list-items">
+                        <a href="/pages/countries/indonesia.html"><img src="/images/TOP_PHOTOS/TOP_PHOTO_BALI.JPG" alt="" placeholder="ccc" /></a>
+                        <h2 class="description">
+                            <p>BALI</p>
+                            <br /><span>INDONESIA</span>
+                        </h2>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
