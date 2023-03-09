@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Serif+Pro&family=Unbounded:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/png" href="/images/logo.png" />
+        <link rel="stylesheet" href="/styles/shared.css" />
+        <link rel="stylesheet" href="/styles/places.css" />
+        <script defer src="/scripts/index.js"></script>
+        <script defer src="/scripts/lang.js"></script>
+        <title>Ukraine</title>
+    </head>
+    <body onLoad="onLoadChanger()">
+        <header>
+            <nav class="top-nav">
+                <div class="top-nav--logo">
+                    <a href="/index.html">Travel<br class="br" />Passion</a>
+                </div>
+                <div class="top-nav--links">
+                    <a class="toplink-1" href="/pages/main_countries.html">Visited Places</a>
+                    <a class="toplink-2" href="/pages/about.html">About me</a>
+                    <select class="select-lang" onChange="upDate()">
+                        <option value="English">en</option>
+                        <option value="Ukraine">ua</option>
+                        <option value="Russian">ru</option>
+                        <option value="france">fr</option>
+                    </select>
+                </div>
+            </nav>
+        </header>
+        <main></main>
+        <footer></footer>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Serif+Pro&family=Unbounded:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/png" href="/images/logo.png" />
+        <link rel="stylesheet" href="/styles/shared.css" />
+        <link rel="stylesheet" href="/styles/places.css" />
+
+        <script defer src="/scripts/lang.js"></script>
+        <title>Vietnam</title>
+    </head>
+    <body onLoad="onLoadChanger()">
+        <header>
+            <nav class="top-nav">
+                <div class="top-nav--logo">
+                    <a href="/index.html">Travel<br class="br" />Passion</a>
+                </div>
+                <div class="top-nav--links">
+                    <a class="toplink-1" href="/pages/main_countries.html">Visited Places</a>
+                    <a class="toplink-2" href="/pages/about.html">About me</a>
+                    <select class="select-lang" onChange="upDate()" class="toplink-1">
+                        <option value="English">en</option>
+                        <option value="Ukraine">ua</option>
+                        <option value="Russian">ru</option>
+                        <option value="france">fr</option>
+                    </select>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="section section-1">
+                <div class="content">
+                    <div class="place-description">
+                        <h1 class="vietnam-desc--header1">Nha Trang. 2022</h1>
+                        <p class="vietnam-desc--text1">
+                            Nha Trang is the beach capital of Vietnam, and this definition is enough to understand the very essence of resort life in
+                            a nutshell. This is a really noisy, cheerful, full of energy town that attracts tens of thousands of tourists every year.
+                        </p>
+                    </div>
+                    <div class="place-video">
+                        <iframe
+                            class="video video-1"
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/O-_otUKGTa0"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                        <!-- <video src="https://youtu.be/ROtSymwh6pc" width="720" height="240" controls poster=""></video> -->
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>

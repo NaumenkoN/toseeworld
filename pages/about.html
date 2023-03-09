@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Serif+Pro&family=Unbounded:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/png" href="/images/logo.png" />
+        <link rel="stylesheet" href="/styles/shared.css" />
+        <link rel="stylesheet" href="/styles/about.css" />
+
+        <script defer src="/scripts/lang.js"></script>
+        <title>About Me</title>
+    </head>
+    <body onLoad="onLoadChanger()">
+        <header>
+            <nav class="top-nav">
+                <div class="top-nav--logo">
+                    <a href="/index.html">Travel<br class="br" />Passion</a>
+                </div>
+                <div class="top-nav--links">
+                    <a class="toplink-1" href="/pages/main_countries.html">Visited Places</a>
+                    <a class="toplink-2" href="/pages/about.html">About me</a>
+                    <select class="select-lang" onChange="upDate()">
+                        <option value="English">en</option>
+                        <option value="Ukraine">ua</option>
+                        <option value="Russian">ru</option>
+                        <option value="france">fr</option>
+                    </select>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="modal-window">
+                <img src="/images/IMG_6632.JPG" alt="me" />
+                <div class="modal-content">
+                    <p class="about-greetings--content1">
+                        I started traveling at the age of 18 as it was related to my job. About 15 years ago the quality of my equipment as well as my
+                        shooting skills were not high, but everything has changed nowadays, after many years I started traveling again and switched
+                        from photography to video shooting and editing.
+                    </p>
+                    <p class="about-greetings--content2">
+                        Also I become a web developer, and this is one of the first websites made myself. More about me as a web developer and all my
+                        works, you`ll find if you will tap on
+                    </p>
+                    <a href="https://nikolai-web.dev" target="blank" class="top-places--link developer-site--link">this link.</a>
+
+                    <p class="about-greetings--content3">To folow my social networks and contact with me scroll down the page</p>
+                    <a href="#footer" class="top-places--link social-media--link"></a>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="contacts">
+                <h1>Contacts:</h1>
+                <div class="contact-links">
+                    <a href="https://www.youtube.com/@nikolasaureriy" target="_blank"
+                        ><img src="/images/icons8-youtube-logo.svg" alt="youtobe_logo"
+                    /></a>
+
+                    <a href="https://www.instagram.com/ka_lyamba" target="_blank"><img src="/images/icons8-instagram.svg" alt="instagram_logo" /></a>
+
+                    <a href="nikolas.aureriy@gmail.com" target="_blank"><img src="/images/icons8-gmail-logo.svg" alt="gmail_logo" /></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

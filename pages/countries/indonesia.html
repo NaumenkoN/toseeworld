@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Serif+Pro&family=Unbounded:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/png" href="/images/logo.png" />
+        <link rel="stylesheet" href="/styles/shared.css" />
+        <link rel="stylesheet" href="/styles/places.css" />
+        <script defer src="/scripts/lang.js"></script>
+
+        <title>Indonesia</title>
+    </head>
+    <body onLoad="onLoadChanger()">
+        <header>
+            <nav class="top-nav">
+                <div class="top-nav--logo">
+                    <a href="/index.html">Travel<br class="br" />Passion</a>
+                </div>
+                <div class="top-nav--links">
+                    <a class="toplink-1" href="/pages/main_countries.html">Visited Places</a>
+                    <a class="toplink-2" href="/pages/about.html">About me</a>
+                    <select class="select-lang" onChange="upDate()">
+                        <option value="English">en</option>
+                        <option value="Ukraine">ua</option>
+                        <option value="Russian">ru</option>
+                        <option value="france">fr</option>
+                    </select>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="section section-1">
+                <div class="content">
+                    <div class="place-description">
+                        <h1 class="bali-desc--header1">Bali-Main</h1>
+                        <p class="bali-desc--text1">
+                            A wonderful place for any kind of pastime. Amazing nature. Benevolent people. Indigenous culture. And many more.
+                        </p>
+                    </div>
+
+                    <div class="place-video">
+                        <iframe
+                            class="video"
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/GqhEsITbN3w"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-2">
+                <div class="content">
+                    <div class="place-description">
+                        <h1 class="bali-desc--header2">Kanto Lampo waterfall. Monkey Forest. Kuta beach. Saraswati Temple.</h1>
+                        <p class="bali-desc--text2">
+                            The monkey forest is a sacred place protected by the government, on the basis of which research is carried out on the
+                            behavior of monkeys within their groups and also with people. The waterfall is great :). Kuta is one of the most visited
+                            beaches, located in the popular area of the same name in Bali. Saraswati is the main, traditional Hindu temple in the Ubud
+                            area.
+                        </p>
+                    </div>
+
+                    <div class="place-video">
+                        <iframe
+                            class="video"
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/Ek3gH9Txq0o"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>

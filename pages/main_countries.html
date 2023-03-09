@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Serif+Pro&family=Unbounded:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/png" href="/images/logo.png" />
+        <link rel="stylesheet" href="/styles/shared.css" />
+        <link rel="stylesheet" href="/styles/main_countries.css" />
+        <script defer src="/scripts/lang.js"></script>
+        
+        <title>Destinations</title>
+    </head>
+    <body onLoad="onLoadChanger()">
+        <header>
+            <nav class="top-nav">
+                <div class="top-nav--logo">
+                    <a href="/index.html">Travel<br class="br"/>Passion</a>
+                </div>
+                <div class="top-nav--links">
+                    
+                    <a class="toplink-1" href="/pages/main_countries.html">Visited Places</a>
+                    <a class="toplink-2"href="/pages/about.html">About me</a>
+                    <select class="select-lang" onChange="upDate()">
+                        <option value="English">en</option>
+                        <option value="Ukraine">ua</option>
+                        <option value="Russian">ru</option>
+                        <option value="france">fr</option>
+                    </select>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <ul class="grid-countries">
+                
+                <li class="grid-country">
+                    <a href="/pages/countries/thailand.html" target="_blank"><img src="/images/countries/main_countries/THAILAND.jpg" alt="THAILAND" /></a>
+                    <div class="list-content">
+                        <h2>THAILAND</h2>
+                        <p class="thailand-description">I love this sunny contrast country. Sea, food, people, nature, historical sights.</p>
+                        <a href="/pages/countries/thailand.html" target="_blank" class="explore">Explore &#x2192</a>
+                    </div>
+                </li>
+                <li class="grid-country">
+                    <a href="/pages/countries/indonesia.html" target="_blank"><img src="/images/countries/main_countries/INDONESIA.jpg" alt="INDONESIA" /></a>
+                    <div class="list-content">
+                        <h2>INDONESIA</h2>
+                        <p class="indonesia-description">Country of a thousand islands. Unusual flora and fauna, volcanoes, historical monuments, hospitality.</p>
+                        <a href="/pages/countries/indonesia.html" target="_blank" class="explore">Explore &#x2192</a>
+                    </div>
+                </li>
+                <li class="grid-country">
+                    <a href="/pages/countries/vietnam.html" target="_blank"><img src="/images/countries/main_countries/VIETNAM.jpg" alt="VIETNAM" /></a>
+                    <div class="list-content">
+                        <h2>VIETNAM</h2>
+                        <p class="vietnam-description">A picturesque, original rapidly developing country. Has all the advantages of coastal Asian countries. Lots of beautiful places all over the country. Travel duration: 1 month.</p>
+                        <a href="/pages/countries/vietnam.html" target="_blank" class="explore">Explore &#x2192</a>
+                    </div>
+                </li>
+                <li class="grid-country">
+                    <a href="/pages/countries/israel.html" target="_blank"><img src="/images/countries/main_countries/ISRAEL.jpg" alt="ISRAEL" /></a>
+                    <div class="list-content">
+                        <h2>ISRAEL</h2>
+                        <p class="israel-description">Not a big, but very developed, original country. Famous for its Dead Sea resorts, it is the main religious center of Christians, one of the leading technological centers in the world. Travel duration: 6 months.</p>
+                        <a href="/pages/countries/israel.html" target="_blank" class="explore">Explore &#x2192</a>
+                    </div>
+                </li>
+                <li class="grid-country">
+                    <a href="/pages/countries/cambodia.html" target="_blank"><img src="/images/countries/main_countries/CAMBODIA.jpg" alt="CAMBODIA" /></a>
+                    <div class="list-content">
+                        <h2>CAMBODIA</h2>
+                        <p class="cambodia-description">An interesting and at the same time mysterious country from a historical point of view. Poor, hospitable, very corrupt. Travel duration: 3 days.</p>
+                        <a href="/pages/countries/cambodia.html" target="_blank" class="explore">Explore &#x2192</a>
+                    </div>
+                </li>
+                <li class="grid-country">
+                    <a href="/pages/countries/india.html" target="_blank"><img src="/images/countries/main_countries/INDIA.jpg" alt="INDIA" /></a>
+                    <div class="list-content">
+                        <h2>INDIA</h2>
+                        <p class="india-description">Immeasurable country. Be famous for its cuisine, ancient history, nature, architectural and historical buildings. Travel duration: 10 months.</p>
+                        <a href="/pages/countries/india.html" target="_blank" class="explore">Explore &#x2192</a>
+                    </div>
+                </li>
+                <li class="grid-country">
+                    <a href="/pages/countries/tunisia.html" target="_blank"><img src="/images/countries/main_countries/TUNISIA.jpg" alt="TUNISIA" /></a>
+                    <div class="list-content">
+                        <h2>TUNISIA</h2>
+                        <p class="tunisia-description">The most secular, developed and northern Muslim country in Africa. Famous for its spa resorts, historical sites and the Sahara desert.</p>
+                        <a href="/pages/countries/tunisia.html" target="_blank" class="explore">Explore &#x2192</a>
+                    </div>
+                </li>
+                <li class="grid-country">
+                    <a href="/pages/countries/egypt.html" target="_blank"><img src="/images/countries/main_countries/EGYPT.jpg" alt="EGYPT" /></a>
+                    <div class="list-content">
+                        <h2>EGYPT</h2>
+                        <p class="egypt-description">The mysterious history of Egypt... Until now, there is no reliable answer who and how built all those numerous buildings of antiquity. But what a beautiful Red Sea!</p>
+                        <a href="/pages/countries/egypt.html" target="_blank" class="explore">Explore &#x2192</a>
+                    </div>
+                </li>
+                
+                
+                <li class="grid-country">
+                    <a href="/pages/countries/turkye.html" target="_blank"><img src="/images/countries/main_countries/TURKYE.png" alt="TURKYE" /></a>
+                    <div class="list-content">
+                        <h2>TURKYE</h2>
+                        <p class="turkye-description">Hospitable Muslim country, which is famous for its seaside resorts, cuisine, culture and many world-famous historical sights. Travel duration: 18 months.</p>
+                        <a href="/pages/countries/turkye.html" target="_blank" class="explore">Explore &#x2192</a>
+                    </div>
+                </li>
+                
+                
+                <li class="grid-country display-none">
+                    <a href="/pages/countries/ukraine.html" target="_blank"><img src="/images/countries/main_countries/UKRAINE.jpg" alt="UKRAINE" /></a>
+                    <div class="list-content">
+                        <h2>UKRAINE</h2>
+                        <p class="ukraine-description">I want to express my support for Ukraine, I wish the war to end as soon as possible and those responsible for it be punished.</p>
+                        <a href="/pages/countries/ukraine.html" target="_blank" class="explore">Explore &#x2192</a>
+                    </div>
+                </li>
+                
+            </ul>
+        </main>
+        <footer></footer>
+    </body>
+</html>
