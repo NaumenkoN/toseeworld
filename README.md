@@ -61,7 +61,7 @@ br/><br/>
 
 # Conclusion
 
-Despite the fact that the site is not without its shortcomings based on modern trends in development and design. It's quite suitable as a pet project.
+Despite the fact that the site is not without flaws based on modern trends in development and design. It's quite suitable as a pet project.
 
 
 
