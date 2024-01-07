@@ -37,7 +37,7 @@ Website development is quite simple in its implementation. I used native JavaScr
 ![countries](https://github.com/NaumenkoN/toseeworld/assets/114875059/60fd61f4-8f07-4c25-b8bb-9608b379c5e4)
 
 
-br/><br/>
+<br/><br/>
 
 # Content
 ![photo](https://github.com/NaumenkoN/toseeworld/assets/114875059/61da0691-d0e2-44f5-bbc3-5b38eb993b05)
